@@ -1,0 +1,14 @@
+<view>
+  <am-button class="atn-btn" type="ghost" onTap="toastSuccessHandle">演示 toast success</am-button>
+</view>
+<view>
+  <am-button class="atn-btn" type="ghost" onTap="toastFailHandle">演示 toast fail</am-button>
+</view>
+<view>
+  <am-button class="atn-btn" type="ghost" onTap="toastExceptionHandle">演示 toast exception 以及成功回调（钉钉中 fail 和 exception 是一样的，支付宝有区别,图标不同 ）</am-button>
+</view>
+<view>
+  <am-button class="atn-btn" type="ghost" onTap="toastNoneHandle">演示 toast none</am-button>
+</view>
+
+<search onGetSerachInstance="onGetSerachInstance" onSearch="onSearch" onScan="onScan" placeholder="演示搜索组件（右边）" value="{{searchValue}}"></search>

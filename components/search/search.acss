@@ -1,0 +1,31 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 25rpx;
+  box-shadow: 2rpx 5rpx 5rpx 1rpx #eee;
+  /* box-shadow: 0 0 10rpx #dadada; */
+  padding: 14rpx 30rpx;
+  box-sizing: border-box;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  width: 90%
+}
+
+.search-icon {
+  width: 45rpx;
+  height: 45rpx
+}
+
+.search-input {
+  flex: 1;
+  line-height: 45rpx
+}
+
+.scan-icon, .clear-icon {
+  font-size: 45rpx
+}
+
+.clear-icon {
+  margin-right: 20rpx
+}

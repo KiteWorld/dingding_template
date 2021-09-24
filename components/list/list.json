@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "title": "mini-ali-ui-rpx/es/title/index",
+    "container": "mini-ali-ui-rpx/es/container/index",
+    "am-icon": "mini-ali-ui-rpx/es/am-icon/index",
+    "tag": "mini-ali-ui-rpx/es/tag/index"
+  }
+}

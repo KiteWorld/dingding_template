@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "list-item": "mini-ali-ui-rpx/es/list/list-item/index"
+  }
+}

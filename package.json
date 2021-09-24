@@ -1,0 +1,16 @@
+{
+  "name": "kite",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "dependencies": {
+    "mini-ali-recycle-list": "^1.0.0",
+    "mini-ali-ui-rpx": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

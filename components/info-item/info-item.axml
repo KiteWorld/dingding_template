@@ -1,0 +1,9 @@
+<list-item disabled last="{{!hasLine}}" className="list-item" arrow="{{arrow}}">
+  <view class="info-item">
+    <text class="info-label" style="width:{{width}};flex-basis: {{width}};">{{label}}</text>
+    <slot>
+      <view class="info-value {{wrap?'huanhang':'ellipsis_1'}}" style="color:{{valueColor}}">{{value}}</view>
+    </slot>
+  </view>
+  <slot name="extra"></slot>
+</list-item>

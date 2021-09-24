@@ -1,0 +1,3 @@
+<view class="gap"></view>
+<textarea value="{{value||''}}" placeholder="{{disabled?'无备注信息':placeholder}}" class="remark" onInput="inputRemark" disabled="{{disabled}}"></textarea>
+<view class="gap"></view>

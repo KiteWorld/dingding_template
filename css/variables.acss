@@ -1,0 +1,7 @@
+page {
+  /*全局通用的CSS变量  */
+  --text-color: #707070;
+  --text-secondary-color: #c8c9cc;
+  --border-color: #eee;
+  --theme-color: #49a9ee;
+}

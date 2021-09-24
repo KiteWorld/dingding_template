@@ -1,0 +1,12 @@
+<view class='search-bar'>
+  <slot name="left-icon">
+    <image src='../../img/search_icon.png' mode='aspectFit' class="search-icon" />
+  </slot>
+  <input type="search" value="{{inputValue}}" placeholder="{{placeholder}}" onConfirm='search' onFocus="focus" onBlur="blur" onInput="input" class="search-input" controlled />
+  <view onTap="clearLoad" a:if="{{clearable&&inputValue}}">
+    <am-icon type="close_" class="clear-icon"></am-icon>
+  </view>
+  <view onTap="scan" a:if="{{showScan}}">
+    <am-icon type="scan" class="scan-icon"></am-icon>
+  </view>
+</view>
