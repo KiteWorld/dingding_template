@@ -1,0 +1,7 @@
+.atn-btn{
+  width: 80%;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  margin: 0 auto;
+}

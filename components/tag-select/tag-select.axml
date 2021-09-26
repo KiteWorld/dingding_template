@@ -1,3 +1,0 @@
-<view class="result-tag" onTap="selectResult" a:if="{{tagList.length >=1}}">
-  <view class="result-tag-item  {{result == item.value?'result-tag-active':''}}" a:for="{{tagList}}" a:key="*this" data-value="{{item.value}}">{{item.title}}</view>
-</view>
