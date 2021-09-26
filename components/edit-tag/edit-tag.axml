@@ -1,9 +1,4 @@
 <view class="{{hasLine?'scale-1px':''}}">
-  <slot name="title">
-    <view onTap="toSelect" a:if="{{!disabled&&isShowTitle}}">
-      <info-item label="{{title}}" value="{{titleDes}}" valueColor="#ddd" arrow></info-item>
-    </view>
-  </slot>
   <view a:if="{{tagsList.length>0}}" class="edit-tags-box" style="{{hasGap?'padding: 20rpx 0;':''}}">
     <view a:for="{{tagsList}}" onTap="onClick" data-index="{{index}}" class="edit-tag" a:key="*this">
       <slot>

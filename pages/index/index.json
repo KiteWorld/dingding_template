@@ -1,6 +1,8 @@
 {
   "defaultTitle": "演示页面1",
   "usingComponents": {
+    "collapse": "mini-ali-ui-rpx/es/collapse/index", 
+    "collapse-item": "mini-ali-ui-rpx/es/collapse/collapse-item/index",
     "list": "mini-ali-ui-rpx/es/list/index",
     "list-item": "mini-ali-ui-rpx/es/list/list-item/index",
     "am-checkbox": "mini-ali-ui-rpx/es/am-checkbox/index",

@@ -7,9 +7,9 @@ export const listMixin = {
   },
 
   //钉钉小程序无法通过 ref 或者 this.selectComponent 来获取实例，只能通过子组件给父组件传参的方式实现
-  onGetInstance(instance) {
-    this.list = instance
-  },
+  // onGetInstance(instance) {
+  //   this.list = instance
+  // },
   onGetSerachInstance(instance) {
     this.searchComp = instance
   }

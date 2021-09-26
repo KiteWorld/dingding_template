@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/checkbox/checkbox"
+    "pages/index2/index"
   ],
   "window": {
     "defaultTitle": "钉钉通用模板",
@@ -11,6 +11,19 @@
     "textColor": "#dddddd",
     "selectedColor": "#49a9ee",
     "backgroundColor": "#ffffff",
-    "items": []
+    "items": [
+      {
+        "icon": "img/receipt.png",
+        "activeIcon": "img/receipt-active.png",
+        "pagePath": "pages/index/index",
+        "name": "演示页面1"
+      }, 
+      {
+        "icon": "img/in-out.png",
+        "activeIcon": "img/in-out-active.png",
+        "pagePath": "pages/index2/index",
+        "name": "演示页面2"
+      }
+    ]
   }
 }

@@ -11,7 +11,6 @@ Component({
     disabled: false, // 为 true 只显示 tag
     extraParam: null, // 额外参数
     hasLine: true, //是否下边框
-    isShowTitle: true, //是否显示标题
   },
   didMount() { },
   didUpdate() { },
