@@ -1,3 +1,4 @@
+import { isType } from "./utils"
 //自定义小程序页面 page 的 mixin 功能（不同于 behaviors）
 const nativePage = Page
 const lifecycle = ['onLoad', 'onReady', 'onShow', 'onHide', 'onUnload', 'onPullDownRefresh', 'onReachBottom', 'onShareAppMessage', 'onTitleClick']
@@ -10,6 +11,7 @@ my.mixin = function (mixins) {
     globalMixin = mixins
   }
 }
+
 Page = function (config) {
   //加入全局mixin
   if (globalMixin && config.data) {
@@ -42,11 +44,4 @@ function merge(mixins, config) {
       })
     }
   })
-}
-
-//判断类型工具
-function isType(target, type) {
-  let targetType = Object.prototype.toString.call(target).slice(8, -1).toLowerCase()
-  type = type.toLowerCase()
-  return targetType === type
 }

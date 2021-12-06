@@ -1,4 +1,3 @@
-
 //判断是否为空，排除 0 和 "" 的情况
 export const isEmpty = function (value) {
   if (value !== null && value !== undefined) return true
@@ -82,11 +81,18 @@ export function throttle(fn) {
     if (!valid) {
       return false
     }
-    // 工作时间，执行函数并且在间隔期内把状态位设为无效
     valid = false
     setTimeout(() => {
       fn.call(this, arguments);
       valid = true;
     }, 500)
   }
+}
+
+
+//判断类型工具
+export function isType(target, type) {
+  let targetType = Object.prototype.toString.call(target).slice(8, -1).toLowerCase()
+  type = type.toLowerCase()
+  return targetType === type
 }

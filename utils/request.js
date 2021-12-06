@@ -27,14 +27,14 @@ async function requestMain(api, method, data, {
   resultFeild = 'result'
 }) {
   if (!noAuth && !(await authLogin(true))) return
-  let header = customHeader || HEADER;
+  let headers = customHeader || HEADER;
   const { data: token } = dd.getStorageSync({ key: CACHE_TOKEN })
-  if (!noAuth && token) header[TOKENNAME] = token
+  if (!noAuth && token) headers[TOKENNAME] = token
   return new Promise(reslove => {
     dd.httpRequest({
       url: (baseURL || HTTP_REQUEST_URL) + api,
       method: method || 'GET',
-      headers: header,
+      headers,
       // get请求参数没有做序列化处理
       data: method === 'GET' ? data || {} : JSON.stringify(data || {}),
       dataType: dataType || 'json',
@@ -59,7 +59,7 @@ async function requestMain(api, method, data, {
 
 export default request
 
-//异常处理
+//异常处理，这个只处理了 500 和 401 的异常清空，根据自己需要调整
 function errorHandle(code, message) {
   if (code === 500) {
     toast.fail(message)
